@@ -1,0 +1,8 @@
+# Needed by the daily GitHub Actions workflow.
+requests==2.32.3
+beautifulsoup4==4.12.3   # only for the no-token scrape fallback
+
+# Font subsetting. Without these the generators still run, but fall back to
+# the reader's system monospace instead of embedding a 0.600 em face.
+fonttools==4.53.1
+brotli==1.1.0

@@ -1,0 +1,16 @@
+{
+  "username": "quantume1",
+  "prompt": "quantume1@github",
+  "card": {
+    "title": "quantume1@github",
+    "rows": [
+      ["Now",        "Building things that run in the terminal"],
+      ["Prev",       "—"],
+      ["Stack",      "Python · TypeScript · Bash · Git"],
+      ["Editor",     "Neovim"],
+      ["Shell",      "zsh + tmux"],
+      ["Highlights", "Animated SVG profile, no JS, no third-party stats"],
+      ["Uptime",     "always compiling"]
+    ]
+  }
+}

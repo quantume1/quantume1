@@ -1,0 +1,11 @@
+.venv/
+.preview/
+__pycache__/
+*.pyc
+
+# Your source photo and the plate prep_photo.py builds from it are kept OUT of
+# this repo: it is public, and the rendered ascii-portrait.svg is all the
+# README needs. To regenerate the portrait, drop your photo in as
+# source-photo.jpg and run `make portrait` -- it stays local.
+source-photo.*
+source-prepped.png

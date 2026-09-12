@@ -1,0 +1,9 @@
+# Local-only: regenerating the ASCII portrait from a photo.
+# The daily workflow does NOT need these.
+pillow>=10.0
+numpy>=1.24
+
+# Optional quality boosters. prep_photo.py detects them and falls back
+# to pure pillow/numpy implementations if they are absent.
+# opencv-python   # better CLAHE local-contrast
+# rembg           # automatic background removal
