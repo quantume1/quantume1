@@ -101,9 +101,13 @@ def build_streak(data: dict, w: float, static: bool) -> str:
     out.append(f'<text x="{w - pad:.0f}" y="138" fill="{theme.TEXT_BRIGHT}" '
                f'font-size="12" text-anchor="end" {theme.anim("", 0.5, static)}>'
                f'{active} active days</text>')
+    # Integer division renders a real but low percentage as a flat "0%", which
+    # reads as a bug rather than as a sparse year.
+    pct = 100.0 * active / tracked
+    pct_txt = f"{pct:.0f}%" if pct >= 10 else f"{pct:.1f}%"
     out.append(f'<text x="{w - pad:.0f}" y="155" fill="{theme.TEXT}" font-size="10.5" '
                f'text-anchor="end" {theme.anim("", 0.56, static)}>'
-               f'{active * 100 // tracked}% of the year</text>')
+               f'{pct_txt} of the year</text>')
     return close_svg(out, static, "streak0123456789")
 
 
