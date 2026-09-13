@@ -1,10 +1,10 @@
 {
   "username": "quantume1",
   "source": "graphql",
-  "generated_at": "2026-09-12T22:36:55+00:00",
+  "generated_at": "2026-09-13T11:49:57+00:00",
   "range": {
-    "from": "2025-09-13",
-    "to": "2026-09-12"
+    "from": "2025-09-14",
+    "to": "2026-09-13"
   },
   "stats": {
     "total": 11,
@@ -112,11 +112,6 @@
     "restricted": 0
   },
   "days": [
-    {
-      "date": "2025-09-13",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-09-14",
       "count": 0,
@@ -1936,6 +1931,11 @@
       "date": "2026-09-12",
       "count": 3,
       "level": 4
+    },
+    {
+      "date": "2026-09-13",
+      "count": 0,
+      "level": 0
     }
   ]
 }
